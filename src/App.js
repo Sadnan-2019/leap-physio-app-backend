@@ -3,14 +3,22 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Aside from './Components/Aside/Aside';
 import Footer from './Components/Footer/Footer';
+import { Route, Routes } from 'react-router-dom';
+import Login from './Components/Login/Login';
 
 function App() {
   return (
     <div className="">
       <Navbar></Navbar>
       <Aside></Aside>
-      <Footer></Footer>
       
+      <Routes>
+        <Route path="/" element={<Login />}></Route>
+        {/* <Route path="/dashboard" element={<DashBoard />}></Route> */}
+
+         
+      </Routes>
+      <Footer></Footer>
     </div>
   );
 }
