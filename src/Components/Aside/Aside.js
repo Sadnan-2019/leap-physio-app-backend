@@ -1,5 +1,6 @@
 import React from "react";
 import physio from  "../../assets/physio.png"
+import patients from  "../../assets/patients.png"
 const Aside = () => {
   return (
     <div>
@@ -181,9 +182,12 @@ const Aside = () => {
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-tree"></i>
+                  {/* <i class="nav-icon fas fa-tree"></i> */}
+                  {/* <i class="fa-solid fa-hospital-user"></i> */}
+                  <img src={patients} alt=""/>
                   <p>
-                    UI Elements
+                     Patients 
+                     
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
@@ -191,58 +195,23 @@ const Aside = () => {
                   <li class="nav-item">
                     <a href="pages/UI/general.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>General</p>
+                      <p>Add Patients </p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="pages/UI/icons.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Icons</p>
+                      <p>Manage Patients</p>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="pages/UI/buttons.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Buttons</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/UI/sliders.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Sliders</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/UI/modals.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Modals & Alerts</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/UI/navbar.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Navbar & Tabs</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/UI/timeline.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Timeline</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/UI/ribbons.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Ribbons</p>
-                    </a>
-                  </li>
+                  
                 </ul>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-edit"></i>
                   <p>
-                    Forms
+                    Service
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
@@ -250,30 +219,19 @@ const Aside = () => {
                   <li class="nav-item">
                     <a href="pages/forms/general.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>General Elements</p>
+                      <p>Add Service</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="pages/forms/advanced.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Advanced Elements</p>
+                      <p>Manage Service</p>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="pages/forms/editors.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Editors</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="pages/forms/validation.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Validation</p>
-                    </a>
-                  </li>
+                 
                 </ul>
               </li>
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-table"></i>
                   <p>
@@ -694,7 +652,7 @@ const Aside = () => {
                   <i class="nav-icon far fa-circle text-info"></i>
                   <p>Informational</p>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
