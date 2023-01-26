@@ -7,16 +7,17 @@ const AddPhysiotherapy = () => {
         <div className="col-lg-6   d-flex   align-items-center gap-3    ">
           <div class="col-lg-6   ">
             <div class="form-group p-2">
-              <label>Select District</label>
-              <select class="form-control select2" style={{ width: "100%" }}>
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-           
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
+            <div class=" ">
+                    <div
+                      class="card info-card   border border-dark  rounded-5"
+                      style={{ height: "280px" }}
+                    >
+                      <div class="mx-auto      ">
+                        <h5 class="card-title mt-5">Upload Passport Size Image</h5>
+                        <button type="submit" class="btn btn-primary">Choose Picture</button>
+                      </div>
+                    </div>
+                  </div>
             </div>
           </div>
 
