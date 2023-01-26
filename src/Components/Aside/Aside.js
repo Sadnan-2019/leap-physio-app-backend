@@ -1,6 +1,7 @@
 import React from "react";
 import physio from  "../../assets/physio.png"
 import patients from  "../../assets/patients.png"
+import { Link } from "react-router-dom";
 const Aside = () => {
   return (
     <div>
@@ -167,10 +168,10 @@ const Aside = () => {
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="pages/charts/chartjs.html" class="nav-link">
+                    <Link to="/add-physio" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Add Physiotherapist</p>
-                    </a>
+                    </Link>
                   </li>
                   <li class="nav-item">
                     <a href="pages/charts/flot.html" class="nav-link">
