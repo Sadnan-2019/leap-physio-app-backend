@@ -71,43 +71,69 @@ const AddPhysiotherapy = () => {
       <div className="row d-flex justify-content-center align-items-center">
       <div class="col-lg-6 d-flex justify-content-between align-items-center p-2   ">
             <div class="form-group p-2 col-lg-6 "  >
-              <label>Select Division</label>
-              <select class="form-control select2" style={{ width: "100%" }}>
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                {/* <option disabled="disabled">California (disabled)</option> */}
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
+              <label>  Name</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Name"/>
+                
             </div>
-            <div class="form-group p-2 col-lg-6" >
-              <label>Select District</label>
-              <select class="form-control select2" style={{ width: "100%" }}>
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                {/* <option disabled="disabled">California (disabled)</option> */}
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
+            <div class="form-group p-2 col-lg-6 "  >
+              <label>Address</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Address"/>
+                
             </div>
-            <div class="form-group p-2 col-lg-6">
-              <label>Select Thana </label>
-              <select class="form-control select2" style={{ width: "100%" }}>
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                {/* <option disabled="disabled">California (disabled)</option> */}
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
+            <div class="form-group p-2 col-lg-6 "  >
+              <label>Qualification</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Qualification"/>
+                
             </div>
+            {/* <div class="form-group p-2 col-lg-6 "  >
+              <label>Mobile</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Mobile"/>
+                
+            </div> */}
           </div>
       </div>
+      <div className="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-6 d-flex justify-content-between align-items-center p-2   ">
+            <div class="form-group p-2 col-lg-6 "  >
+              <label>  Mobile</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Mobile"/>
+                
+            </div>
+            <div class="form-group p-2 col-lg-6 "  >
+              <label>Refference Name</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Refference Name"/>
+                
+            </div>
+            <div class="form-group p-2 col-lg-6 "  >
+              <label>Refference Moile No</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Refference Moile No"/>
+                
+            </div>
+            {/* <div class="form-group p-2 col-lg-6 "  >
+              <label>Mobile</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Mobile"/>
+                
+            </div> */}
+          </div>
+      </div>
+            <div className="container">
+              <div className="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-6 d-flex justify-content-between align-items-center p-2   ">
+            <div class="form-group p-2 col-lg-6 "  >
+              <label>  NID</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="NID"/>
+                
+            </div>
+            
+             
+            {/* <div class="form-group p-2 col-lg-6 "  >
+              <label>Mobile</label>
+              <input class="form-control select2" style={{ width: "100%" }} placeholder="Mobile"/>
+                
+            </div> */}
+          </div>
+      </div>
+            </div>
     </div>
   );
 };
