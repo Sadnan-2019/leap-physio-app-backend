@@ -70,6 +70,11 @@ const ManagePhysio = () => {
                     <td>Gulshan</td>
                     <td>01717654393</td>
                     <td>Road,108 Gulshan</td>
+                    <td> <img
+                src="dist/img/user2-160x160.jpg"
+                class="img-circle elevation-2"
+                alt="User Image"
+              /></td>
                   </tr>
                   <tr>
                   <td>3</td>
