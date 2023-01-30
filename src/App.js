@@ -6,16 +6,20 @@ import Footer from './Components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import Login from './Components/Login/Login';
 import AddPhysiotherapy from './Components/Physiotherapy/AddPhysiotherapy';
+import ManagePhysio from './Components/Physiotherapy/ManagePhysio';
+import AddPatients from './Components/Patients/AddPatients';
 
 function App() {
   return (
-    <div className="">
+    <div className="wrapper hold-transition sidebar-mini">
       <Navbar></Navbar>
       <Aside></Aside>
       
       <Routes>
         <Route path="/" element={<Login />}></Route>
         <Route path="/add-physio" element={<AddPhysiotherapy />}></Route>
+        <Route path="/manage-physio" element={<ManagePhysio />}></Route>
+        <Route path="/add-patients" element={<AddPatients/>}></Route>
         {/* <Route path="/dashboard" element={<DashBoard />}></Route> */}
 
          

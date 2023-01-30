@@ -174,11 +174,17 @@ const Aside = () => {
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <a href="pages/charts/flot.html" class="nav-link">
+                    <Link to="/manage-physio" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manage Physiotherapist </p>
+                    </Link>
+                  </li>
+                  {/* <li class="nav-item">
+                    <a href="/manage-physio" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Manage Physiotherapist </p>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li class="nav-item">
@@ -194,10 +200,10 @@ const Aside = () => {
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="pages/UI/general.html" class="nav-link">
+                  <Link to="/add-patients" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Add Patients </p>
-                    </a>
+                    </Link>
                   </li>
                   <li class="nav-item">
                     <a href="pages/UI/icons.html" class="nav-link">
