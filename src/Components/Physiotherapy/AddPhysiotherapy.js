@@ -14,10 +14,16 @@ const AddPhysiotherapy = () => {
                     >
                       <div class="    text-center  mx-auto   ">
                         <h5 class="  mt-5">Upload Passport Size Image</h5>
-                        
+                        {/* class="btn btn-block btn-outline-primary btn-sm" */}
+                        <img
+                          src="http://cdn.onlinewebfonts.com/svg/img_212915.png"
+                          class="img-circle elevation-2 "
+                          alt="User Image"
+                          style={{width:"100px",height:"100px"}}
+                        />
 
-                        <button type="submit" class="btn btn-primary">Choose Picture</button>
-                      </div>
+                        <input type="file" class="mt-5 btn btn-xs btn-outline-primary btn-block"/> 
+                      </div>  
                     </div>
                   </div>
             </div>
