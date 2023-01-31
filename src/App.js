@@ -8,6 +8,8 @@ import Login from './Components/Login/Login';
 import AddPhysiotherapy from './Components/Physiotherapy/AddPhysiotherapy';
 import ManagePhysio from './Components/Physiotherapy/ManagePhysio';
 import AddPatients from './Components/Patients/AddPatients';
+import ManagePatients from './Components/Patients/ManagePatients';
+import AddService from './Components/Service/AddService';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/add-physio" element={<AddPhysiotherapy />}></Route>
         <Route path="/manage-physio" element={<ManagePhysio />}></Route>
         <Route path="/add-patients" element={<AddPatients/>}></Route>
+        <Route path="/manage-patients" element={<ManagePatients/>}></Route>
+        <Route path="/add-service" element={<AddService/>}></Route>
         {/* <Route path="/dashboard" element={<DashBoard />}></Route> */}
 
          

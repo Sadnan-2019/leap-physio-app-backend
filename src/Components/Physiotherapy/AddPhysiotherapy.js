@@ -3,13 +3,16 @@ import React from "react";
 const AddPhysiotherapy = () => {
   return (
     <div className="container-fluid ">
+      <div class="card-header ">
+                <h3 class="text-center">Add Physiotherapist Details</h3>
+              </div>
       <div className="row justify-content-center align-items-center ">
         <div className="col-lg-6   d-flex   align-items-center gap-3 mt-5   ">
           <div class="col-lg-6   ">
             <div class="form-group p-2">
             <div class=" ">
                     <div
-                      class="d-flex flex-column    border border-dark rounded   "
+                      class="  flex-column    border border-dark rounded   "
                       style={{ height: "280px" }}
                     >
                       <div class="    text-center  mx-auto   ">

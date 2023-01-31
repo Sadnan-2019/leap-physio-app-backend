@@ -4,23 +4,31 @@ const AddPatients = () => {
   return (
     <div>
       <div className="container-fluid ">
+      <div class="card-header ">
+                <h3 class="text-center">Add Patients Details</h3>
+              </div>
         <div className="row justify-content-center align-items-center ">
           <div className="col-lg-6   d-flex   align-items-center gap-3 mt-5   ">
             <div class="col-lg-6   ">
               <div class="form-group p-2">
                 <div class=" ">
-                  <div
-                    class="d-flex flex-column    border border-dark rounded   "
-                    style={{ height: "280px" }}
-                  >
-                    <div class="    text-center  mx-auto   ">
-                      <h5 class="  mt-5">Upload Passport Size Image</h5>
+                <div
+                      class="  flex-column    border border-dark rounded   "
+                      style={{ height: "280px" }}
+                    >
+                      <div class="    text-center  mx-auto   ">
+                        <h5 class="  mt-5">Upload Passport Size Image</h5>
+                        {/* class="btn btn-block btn-outline-primary btn-sm" */}
+                        <img
+                          src="http://cdn.onlinewebfonts.com/svg/img_212915.png"
+                          class="img-circle elevation-2 "
+                          alt="User Image"
+                          style={{width:"100px",height:"100px"}}
+                        />
 
-                      <button type="submit" class="btn btn-primary">
-                        Choose Picture
-                      </button>
-                    </div>
-                  </div>
+                        <input type="file" class="mt-5 btn btn-xs btn-outline-primary btn-block"/> 
+                      </div>  
+                    </div> 
                 </div>
               </div>
             </div>

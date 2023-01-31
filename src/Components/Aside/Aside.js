@@ -206,10 +206,10 @@ const Aside = () => {
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <a href="pages/UI/icons.html" class="nav-link">
+                  <Link to="/manage-patients" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Manage Patients</p>
-                    </a>
+                      <p>Manage Patients </p>
+                    </Link>
                   </li>
                   
                 </ul>
@@ -224,10 +224,10 @@ const Aside = () => {
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="pages/forms/general.html" class="nav-link">
+                  <Link to="/add-service" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Add Service</p>
-                    </a>
+                      <p>Add Service </p>
+                    </Link>
                   </li>
                   <li class="nav-item">
                     <a href="pages/forms/advanced.html" class="nav-link">
