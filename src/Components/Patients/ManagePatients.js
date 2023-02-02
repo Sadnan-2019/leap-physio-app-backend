@@ -9,7 +9,7 @@ const ManagePatients = () => {
           <div class="col-11   ">
             <div class=" ">
               <div class="card-header">
-                <h3 class="card-title">All Patients Details</h3>
+                <h3 class="  text-center">All Patients Details</h3>
               </div>
               {/* <!-- /.card-header --> */}
               <div class="card-body">
@@ -42,7 +42,7 @@ const ManagePatients = () => {
                       <td>
                         {" "}
                         <img
-                          src="dist/img/user2-160x160.jpg"
+                          src="../../dist/img/user4-128x128.jpg"
                           class="img-circle elevation-2"
                           alt="User Image"
                         />
@@ -79,7 +79,7 @@ const ManagePatients = () => {
                       <td>
                         {" "}
                         <img
-                          src="dist/img/user2-160x160.jpg"
+                          src="../../dist/img/user4-128x128.jpg"
                           class="img-circle elevation-2"
                           alt="User Image"
                         />
@@ -107,7 +107,7 @@ const ManagePatients = () => {
                       <td>
                         {" "}
                         <img
-                          src="dist/img/user2-160x160.jpg"
+                          src="../../dist/img/user4-128x128.jpg"
                           class="img-circle elevation-2"
                           alt="User Image"
                         />
@@ -135,7 +135,7 @@ const ManagePatients = () => {
                       <td>
                         {" "}
                         <img
-                          src="dist/img/user2-160x160.jpg"
+                          src="../../dist/img/user4-128x128.jpg"
                           class="img-circle elevation-2"
                           alt="User Image"
                         />
@@ -163,7 +163,7 @@ const ManagePatients = () => {
                       <td>
                         {" "}
                         <img
-                          src="dist/img/user2-160x160.jpg"
+                          src="../../dist/img/user4-128x128.jpg"
                           class="img-circle elevation-2"
                           alt="User Image"
                         />
@@ -191,7 +191,7 @@ const ManagePatients = () => {
                       <td>
                         {" "}
                         <img
-                          src="dist/img/user2-160x160.jpg"
+                          src="../../dist/img/user4-128x128.jpg"
                           class="img-circle elevation-2"
                           alt="User Image"
                         />
@@ -219,7 +219,7 @@ const ManagePatients = () => {
                       <td>
                         {" "}
                         <img
-                          src="dist/img/user2-160x160.jpg"
+                          src="../../dist/img/user4-128x128.jpg"
                           class="img-circle elevation-2"
                           alt="User Image"
                         />

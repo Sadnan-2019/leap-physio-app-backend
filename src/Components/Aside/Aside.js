@@ -1,6 +1,6 @@
 import React from "react";
-import physio from  "../../assets/physio.png"
-import patients from  "../../assets/patients.png"
+import physio from "../../assets/physio.png";
+import patients from "../../assets/patients.png";
 import { Link } from "react-router-dom";
 const Aside = () => {
   return (
@@ -156,10 +156,10 @@ const Aside = () => {
                 <a href="#" class="nav-link">
                   {/* <i class="nav-icon fas fa-chart-pie"></i> */}
                   <img
-                     style={{width:"25px",color:"red"}}
+                    style={{ width: "25px", color: "red" }}
                     src={physio}
                     alt=""
-                  /> 
+                  />
 
                   <p>
                     Physiotherapy
@@ -191,27 +191,25 @@ const Aside = () => {
                 <a href="#" class="nav-link">
                   {/* <i class="nav-icon fas fa-tree"></i> */}
                   {/* <i class="fa-solid fa-hospital-user"></i> */}
-                  <img src={patients} alt=""/>
+                  <img src={patients} alt="" />
                   <p>
-                     Patients 
-                     
+                    Patients
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                  <Link to="/add-patients" class="nav-link">
+                    <Link to="/add-patients" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Add Patients </p>
                     </Link>
                   </li>
                   <li class="nav-item">
-                  <Link to="/manage-patients" class="nav-link">
+                    <Link to="/manage-patients" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Manage Patients </p>
                     </Link>
                   </li>
-                  
                 </ul>
               </li>
               <li class="nav-item">
@@ -224,18 +222,17 @@ const Aside = () => {
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                  <Link to="/add-service" class="nav-link">
+                    <Link to="/add-service" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Add Service </p>
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <a href="pages/forms/advanced.html" class="nav-link">
+                    <Link to="/manage-service" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Manage Service</p>
-                    </a>
+                      <p>Manage Service </p>
+                    </Link>
                   </li>
-                 
                 </ul>
               </li>
               {/* <li class="nav-item">
