@@ -12,9 +12,12 @@ const Navbar = () => {
             </a>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
-            <a href="index3.html" class="nav-link">
-              Home
-            </a>
+            
+            <Link to="/" class="nav-link">
+                     
+                      {/* <p>Manage Physiotherapist </p> */}
+                      Home
+                    </Link>
           </li>
           <li class="nav-item d-none d-sm-inline-block">
             <a href="#" class="nav-link">
