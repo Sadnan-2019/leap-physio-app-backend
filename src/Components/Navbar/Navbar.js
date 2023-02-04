@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -63,7 +64,7 @@ const Navbar = () => {
             </div>
           </li>
 
-          <li class="nav-item dropdown">
+          {/* <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
               <i class="far fa-comments"></i>
               <span class="badge badge-danger navbar-badge">3</span>
@@ -139,13 +140,14 @@ const Navbar = () => {
                 See All Messages
               </a>
             </div>
-          </li>
+          </li> */}
 
           <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
               {/* <i class="far fa-bars"></i> */}
               {/* <i class="fa-regular fa-user"></i> */}
-              <img style={{width:"50px"}} class="user-block img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="user image"/>
+              <img style={{width:"50px"}} class="user-block img-circle img-bordered-sm" 
+              src="../../dist/img/user1-128x128.jpg" alt="user image"/>
 
               
               <span class="badge badge-warning navbar-badge">Profile</span>
@@ -155,10 +157,16 @@ const Navbar = () => {
                 15 Notifications
               </span> */}
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
+              {/* <a href="#" class="dropdown-item">
                  
                 <i class="fas fa-users mr-2"></i>Profile
-              </a>
+              </a> */}
+               
+                    <Link to="/profile" class="dropdown-item">
+                    <i class="fas fa-users mr-2"></i>Profile
+                      {/* <p>Manage Physiotherapist </p> */}
+                    </Link>
+                   
               <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item">
               <i class="fas fa-envelope mr-2"></i>Setting
