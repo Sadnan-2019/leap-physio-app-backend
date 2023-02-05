@@ -120,9 +120,17 @@ const AddPatients = () => {
                 placeholder="Patients Attendent Moile No"
               />
             </div>
-            <div class="form-group p-2 col-lg-6  ">
+            {/* <div class="form-group p-2 col-lg-6  ">
               <label>Add Patients Diagnosis</label>
               <button className=" form-control btn btn-primary">Add Patients Diagnosis</button>
+            </div> */}
+            <div class="form-group p-2 col-lg-6  ">
+              <label>Add Patients Diagnosis</label>
+              {/* <button className=" form-control btn btn-primary">Add Patients Prescribe</button> */}
+              <span class="btn btn-success col fileinput-button">
+                        <i class="fas fa-plus"></i>
+                        <span>Add Patients Diagnosis</span>
+                      </span>
             </div>
             
           </div>
@@ -156,7 +164,11 @@ const AddPatients = () => {
               </div>
               <div class="form-group p-2 col-lg-6  ">
               <label>Add Patients Diagnosis</label>
-              <button className=" form-control btn btn-primary">Add Patients Prescribe</button>
+              {/* <button className=" form-control btn btn-primary">Add Patients Prescribe</button> */}
+              <span class="btn btn-success col fileinput-button">
+                        <i class="fas fa-plus"></i>
+                        <span>Add Patients Prescribe</span>
+                      </span>
             </div>
 
               {/* <div class="form-group p-2 col-lg-6 "  >
