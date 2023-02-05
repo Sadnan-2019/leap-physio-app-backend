@@ -122,14 +122,15 @@ const AddPatients = () => {
             </div>
             <div class="form-group p-2 col-lg-6  ">
               <label>Add Patients Diagnosis</label>
-              <button className=" form-control btn btn-primary">Add</button>
+              <button className=" form-control btn btn-primary">Add Patients Diagnosis</button>
             </div>
+            
           </div>
         </div>
         <div className="container">
           <div className="row d-flex justify-content-center align-items-center">
             <div class="col-lg-6 d-flex justify-content-between align-items-center    ">
-              <div class="form-group p-2 col-lg-6 ">
+              <div class="form-group p-2 col-lg-3 ">
                 <label> NID</label>
                 <input
                   class="form-control select2"
@@ -137,7 +138,7 @@ const AddPatients = () => {
                   placeholder="NID"
                 />
               </div>
-              <div class="form-group p-2 col-lg-6 ">
+              <div class="form-group p-2 col-lg-3 ">
                 <label> Address</label>
                 <input
                   class="form-control select2"
@@ -145,7 +146,7 @@ const AddPatients = () => {
                   placeholder="Address"
                 />
               </div>
-              <div class="form-group p-2 col-lg-6 ">
+              <div class="form-group p-2 col-lg-3 ">
                 <label> Gender</label>
                 <input
                   class="form-control select2"
@@ -153,6 +154,10 @@ const AddPatients = () => {
                   placeholder="Gender"
                 />
               </div>
+              <div class="form-group p-2 col-lg-6  ">
+              <label>Add Patients Diagnosis</label>
+              <button className=" form-control btn btn-primary">Add Patients Prescribe</button>
+            </div>
 
               {/* <div class="form-group p-2 col-lg-6 "  >
               <label>Mobile</label>
