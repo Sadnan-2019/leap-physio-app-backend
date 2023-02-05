@@ -179,18 +179,12 @@ const Aside = () => {
                       <p>Manage Physiotherapist </p>
                     </Link>
                   </li>
-                  {/* <li class="nav-item">
-                    <a href="/manage-physio" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Manage Physiotherapist </p>
-                    </a>
-                  </li> */}
+                  
                 </ul>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  {/* <i class="nav-icon fas fa-tree"></i> */}
-                  {/* <i class="fa-solid fa-hospital-user"></i> */}
+                   
                   <img src={patients} alt="" />
                   <p>
                     Patients
@@ -208,6 +202,30 @@ const Aside = () => {
                     <Link to="/manage-patients" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Manage Patients </p>
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                   
+                  <img src={patients} alt="" />
+                  <p>
+                    Doctor
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <Link to="/add-doctor" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Doctor </p>
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/manage-doctor" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manage Doctor </p>
                     </Link>
                   </li>
                 </ul>

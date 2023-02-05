@@ -13,6 +13,8 @@ import AddService from "./Components/Service/AddService";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import ManageService from "./Components/Service/ManageService";
 import Profile from "./Components/Profile/Profile";
+import AddDoctor from "./Components/Doctor/AddDoctor";
+import ManageDoctor from "./Components/Doctor/ManageDoctor";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/manage-patients" element={<ManagePatients />}></Route>
         <Route path="/add-service" element={<AddService />}></Route>
         <Route path="/manage-service" element={<ManageService/>}></Route>
+        <Route path="/add-doctor" element={<AddDoctor/>}></Route>
+        <Route path="/manage-doctor" element={<ManageDoctor/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
       </Routes>
       <Footer></Footer>

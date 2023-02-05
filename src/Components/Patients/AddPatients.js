@@ -100,21 +100,7 @@ const AddPatients = () => {
                 placeholder="Patients  Mobile "
               />
             </div>
-            {/* <div class="form-group p-2 col-lg-6 "  >
-              <label>Institution Name</label>
-              <input class="form-control select2" style={{ width: "100%" }} placeholder="Institution Name"/>
-                
-            </div> */}
-            {/* <div class="form-group p-2 col-lg-6 "  >
-              <label>Qualification</label>
-              <input class="form-control select2" style={{ width: "100%" }} placeholder="Qualification"/>
-                
-            </div> */}
-            {/* <div class="form-group p-2 col-lg-6 "  >
-              <label>Mobile</label>
-              <input class="form-control select2" style={{ width: "100%" }} placeholder="Mobile"/>
-                
-            </div> */}
+            
           </div>
         </div>
         <div className="row d-flex justify-content-center align-items-center">
