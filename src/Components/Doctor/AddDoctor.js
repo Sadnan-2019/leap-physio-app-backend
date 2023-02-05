@@ -43,6 +43,14 @@ const AddDoctor = () => {
             />
           </div>
           <div class="form-group p-2 col-lg-6 ">
+            <label>Doctor Specialty</label>
+            <input
+              class="form-control select2"
+              style={{ width: "100%" }}
+              placeholder="Doctor Specialty"
+            />
+          </div>
+          <div class="form-group p-2 col-lg-6 ">
             <label>Doctor Degree</label>
             <input
               class="form-control select2"
@@ -53,6 +61,12 @@ const AddDoctor = () => {
            
         </div>
       </div>
+      <div className="container ">
+           <div className="row justify-content-end px-5
+">
+    <button className="btn btn-primary mb-3">Save</button>
+    </div>
+           </div>
       </div>
       
     </div>

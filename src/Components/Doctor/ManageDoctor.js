@@ -18,6 +18,8 @@ const ManageDoctor = () => {
                     <tr>
                       <th>Sl Number</th>
                       <th>Name</th>
+                      <th>Specialty</th>
+                       
                       <th>Degree</th>
 
                       <th>Picture</th>
@@ -28,6 +30,7 @@ const ManageDoctor = () => {
                     <tr>
                       <td>1</td>
                       <td>DrJohirul</td>
+                      <td>Orthopedic</td>
                       <td>
                         Dr Sarwar Iqbal Professor & Senior Consultant
                         Cardiologist MBBS, MD(Nephrology) SPecialist in Kidney
@@ -56,6 +59,7 @@ const ManageDoctor = () => {
                     <tr>
                       <td>1</td>
                       <td>DrJohirul</td>
+                      <td>Orthopedic</td>
                       <td>
                         Dr Sarwar Iqbal Professor & Senior Consultant
                         Cardiologist MBBS, MD(Nephrology) SPecialist in Kidney
@@ -84,6 +88,7 @@ const ManageDoctor = () => {
                     <tr>
                       <td>1</td>
                       <td>DrJohirul</td>
+                      <td>Orthopedic</td>
                       <td>
                         Dr Sarwar Iqbal Professor & Senior Consultant
                         Cardiologist MBBS, MD(Nephrology) SPecialist in Kidney
@@ -112,6 +117,7 @@ const ManageDoctor = () => {
                     <tr>
                       <td>1</td>
                       <td>DrJohirul</td>
+                      <td>Orthopedic</td>
                       <td>
                         Dr Sarwar Iqbal Professor & Senior Consultant
                         Cardiologist MBBS, MD(Nephrology) SPecialist in Kidney
@@ -140,6 +146,7 @@ const ManageDoctor = () => {
                     <tr>
                       <td>1</td>
                       <td>DrJohirul</td>
+                      <td>Orthopedic</td>
                       <td>
                         Dr Sarwar Iqbal Professor & Senior Consultant
                         Cardiologist MBBS, MD(Nephrology) SPecialist in Kidney
@@ -168,6 +175,7 @@ const ManageDoctor = () => {
                     <tr>
                       <td>1</td>
                       <td>DrJohirul</td>
+                      <td>Orthopedic</td>
                       <td>
                         Dr Sarwar Iqbal Professor & Senior Consultant
                         Cardiologist MBBS, MD(Nephrology) SPecialist in Kidney
@@ -196,6 +204,7 @@ const ManageDoctor = () => {
                     <tr>
                       <td>1</td>
                       <td>DrJohirul</td>
+                      <td>Orthopedic</td>
                       <td>
                         Dr Sarwar Iqbal Professor & Senior Consultant
                         Cardiologist MBBS, MD(Nephrology) SPecialist in Kidney

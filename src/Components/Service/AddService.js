@@ -61,9 +61,7 @@
         
         
 
-         
-      </div>
-      <div className="container ">
+        <div className="  ">
           <div
             className="row justify-content-end px-5
 "
@@ -71,6 +69,8 @@
             <button className="btn btn-primary mb-3">Save</button>
           </div>
         </div>
+      </div>
+      
         </div>
     );
  };
