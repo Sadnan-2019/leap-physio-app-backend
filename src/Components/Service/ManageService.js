@@ -8,11 +8,11 @@ const ManageService = () => {
         <div class="row justify-content-center align-items-center px-2">
           <div class="col-8  ">
             <div class=" ">
-              <div class="card-header">
-                <h3 class="card-title">All Service Details</h3>
+            <div class="card-header">
+                <h3 class="text-center">All Service Details</h3>
               </div>
               {/* <!-- /.card-header --> */}
-              <div class="card-body">
+              <div class="card-body px-5 ">
                 <table id="example2" class="table table-bordered table-hover">
                   <thead>
                     <tr>
@@ -79,7 +79,7 @@ const ManageService = () => {
                     </tr>
                     <tr>
                       <td>1</td>
-                      <td>Back Pain</td>
+                      <td>Back Pain.</td>
                       <td>One Hour</td>
                       <td>1000</td>
                       <td>Dhaka</td>

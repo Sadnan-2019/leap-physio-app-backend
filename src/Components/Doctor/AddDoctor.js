@@ -4,6 +4,9 @@ const AddDoctor = () => {
   return (
     <div>
       <div className="container">
+      <div class="card-header ">
+                <h3 class="text-center">Add Doctor Details</h3>
+              </div>
         <div className="row">
         <div class="col-lg-6 mx-auto  ">
         <div class="form-group p-2">
