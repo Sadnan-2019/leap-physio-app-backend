@@ -33,40 +33,40 @@ const AddPhysiotherapy = () => {
           </div>
 
           <div class="col-lg-6 d-flex justify-content-between align-items-center p-2   ">
-            <div class="form-group p-2 col-lg-6 "  >
-              <label>Select Division</label>
-              <select class="form-control select2" style={{ width: "100%" }}>
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                {/* <option disabled="disabled">California (disabled)</option> */}
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
-            </div>
-            <div class="form-group p-2 col-lg-6" >
-              <label>Select District</label>
-              <select class="form-control select2" style={{ width: "100%" }}>
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
-                {/* <option disabled="disabled">California (disabled)</option> */}
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
-              </select>
-            </div>
+          <div class="form-group p-2 col-lg-6 ">
+                <label>Select Division</label>
+                <select class="form-control select2" style={{ width: "100%" }}>
+                  <option selected="selected">Dhaka</option>
+                  <option>Mymenshing</option>
+                  {/* <option disabled="disabled">California (disabled)</option> */}
+                  <option>Rangpur</option>
+                  <option>Chittagong</option>
+                  <option>Sylhet Division </option>
+                  <option>Barisal Division</option>
+                </select>
+              </div>
+              <div class="form-group p-2 col-lg-6">
+                <label>Select District</label>
+                <select class="form-control select2" style={{ width: "100%" }}>
+                  <option selected="selected">Dhaka</option>
+                  <option>Mymenshing</option>
+                  {/* <option disabled="disabled">California (disabled)</option> */}
+                  <option>Rangpur</option>
+                  <option>Chittagong</option>
+                  <option>Sylhet</option>
+                  <option>Barisal</option>
+                </select>
+              </div>
             <div class="form-group p-2 col-lg-6">
               <label>Select Thana </label>
               <select class="form-control select2" style={{ width: "100%" }}>
-                <option selected="selected">Alabama</option>
-                <option>Alaska</option>
+                <option selected="selected">Adabar Thana</option>
+                <option>Badda Thana</option>
                 {/* <option disabled="disabled">California (disabled)</option> */}
-                <option>Delaware</option>
-                <option>Tennessee</option>
-                <option>Texas</option>
-                <option>Washington</option>
+                <option>Bangsal Thana</option>
+                <option>Bimanbandar Thana (Dhaka)</option>
+                <option>Cantonment Thana</option>
+                <option>Chowkbazar Thana</option>
               </select>
             </div>
           </div>

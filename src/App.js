@@ -15,6 +15,7 @@ import ManageService from "./Components/Service/ManageService";
 import Profile from "./Components/Profile/Profile";
 import AddDoctor from "./Components/Doctor/AddDoctor";
 import ManageDoctor from "./Components/Doctor/ManageDoctor";
+import Attendance from "./Components/Attendance/Attendance";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/manage-service" element={<ManageService/>}></Route>
         <Route path="/add-doctor" element={<AddDoctor/>}></Route>
         <Route path="/manage-doctor" element={<ManageDoctor/>}></Route>
+        <Route path="/add-attendance" element={<Attendance/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
       </Routes>
       <Footer></Footer>

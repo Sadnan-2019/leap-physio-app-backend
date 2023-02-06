@@ -34,6 +34,8 @@ const Dashboard = () => {
                   </div>
                   <div class="icon">
                     <i class="ion ion-bag"></i>
+                    <i class="fa-solid fa-users-medical"></i>
+                    {/* <FontAwesomeIcon icon="fa-solid fa-users-medical" /> */}
                   </div>
                   {/* <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a> */}
                 </div>
