@@ -6,7 +6,7 @@ const Attendance = () => {
       <div className="container  ">
         <div className="row ">
        <div className="col-lg-8 mx-auto d-flex">
-       <div class="form-group p-2 col-lg-4 ">
+       <div class="form-group p-2 col-lg-3 ">
         <label>  Service Name</label>
         <select class="form-control select2" style={{ width: "100%" }}>
           <option selected="selected">Lower Back Pain</option>
@@ -18,7 +18,7 @@ const Attendance = () => {
           <option>Arm  Pain</option>
         </select>
       </div>
-       <div class="form-group p-2 col-lg-4 ">
+       <div class="form-group p-2 col-lg-3 ">
         <label>  Patients Name</label>
         <select class="form-control select2" style={{ width: "100%" }}>
           <option selected="selected">Mausd</option>
@@ -30,7 +30,7 @@ const Attendance = () => {
         </select>
       </div>
         
-       <div class="form-group p-2 col-lg-4 ">
+       <div class="form-group p-2 col-lg-3 ">
         <label>  Service Location</label>
         <select class="form-control select2" style={{ width: "100%" }}>
           {/* <option >Lower Back Pain</option>  */}
@@ -42,7 +42,7 @@ const Attendance = () => {
           <option>Badda</option>
         </select>
       </div>
-       <div class="form-group p-2 col-lg-4 ">
+       <div class="form-group p-2 col-lg-3 ">
         <label>  Service Hour</label>
         <select class="form-control select2" style={{ width: "100%" }}>
           <option selected="selected">One Hour</option>
@@ -57,7 +57,7 @@ const Attendance = () => {
         </div>
        <div className="row">
         <div className="col-lg-8 mx-auto">
-        <div class="form-group p-2 col-lg-4  ">
+        <div class="form-group p-2 col-lg-12  ">
         <label>  Physiotherapist Name</label>
         <select class="form-control select2" style={{ width: "100%" }}>
           <option selected="selected">Jafor Rahman</option>
@@ -68,8 +68,16 @@ const Attendance = () => {
         </select>
       </div>
         </div>
-
+        
        </div>
+       <div className="  ">
+          <div
+            className="row justify-content-end px-5
+"
+          >
+            <button className="btn btn-primary mb-3">Save</button>
+          </div>
+        </div>
       </div>
     </div>
   );
