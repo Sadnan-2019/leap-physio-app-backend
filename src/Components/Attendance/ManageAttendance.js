@@ -9,7 +9,7 @@ const ManageAttendance = () => {
           <div class="col-8  ">
             <div class=" ">
             <div class="card-header">
-                <h3 class="text-center">All Service Details</h3>
+                <h3 class="text-center">All Attendance Details</h3>
               </div>
               {/* <!-- /.card-header --> */}
               <div class="card-body px-5 ">
@@ -18,9 +18,11 @@ const ManageAttendance = () => {
                     <tr>
                       <th>Sl Number</th>
                       <th>Service Name</th>
-                      <th>Service Hour</th>
-                      <th>Service Price</th>
+                      <th>Patients Name</th>
                       <th>Service Location</th>
+                      <th>Service Hour</th>
+                      <th>Physiotherapist Name</th>
+                      <th>Status</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -28,9 +30,13 @@ const ManageAttendance = () => {
                     <tr>
                       <td>1</td>
                       <td>Back Pain</td>
+                      <td>Md Nur Mohhamamad</td>
+                      <td>Gulshan</td>
                       <td>One Hour</td>
-                      <td>1000</td>
-                      <td>Dhaka</td>
+                      <td>Abul Kalam</td>
+                       <td> 
+                     <input type="checkbox" checked data-toggle="toggle"/>
+                      </td>
                      
                        <td>
                         <AiFillDelete

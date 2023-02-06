@@ -143,7 +143,7 @@ const Aside = () => {
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <Link to="/manage-service" class="nav-link">
+                    <Link to="/manage-attendance" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Manage Attendance </p>
                     </Link>
