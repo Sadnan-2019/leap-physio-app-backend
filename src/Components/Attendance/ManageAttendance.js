@@ -23,6 +23,7 @@ const ManageAttendance = () => {
                       <th>Service Hour</th>
                       <th>Physiotherapist Name</th>
                       <th>Status</th>
+                      <th>Date & Time</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -35,7 +36,10 @@ const ManageAttendance = () => {
                       <td>One Hour</td>
                       <td>Abul Kalam</td>
                        <td> 
-                     <input type="checkbox" checked data-toggle="toggle"/>
+                     <input type="checkbox"   data-toggle="toggle"/>
+                      </td>
+                       <td> 
+                      7/1/2023 11:45am
                       </td>
                      
                        <td>
@@ -49,21 +53,21 @@ const ManageAttendance = () => {
                         ></FaRegEdit>
                       </td>
 
-                      {/* <div class="image">
-              <img
-                src="dist/img/user2-160x160.jpg"
-                class="img-circle elevation-2"
-                alt="User Image"
-              />
-            </div> */}
+                
                     </tr>
                     <tr>
-                      <td>1</td>
+                      <td>2</td>
                       <td>Back Pain</td>
+                      <td>Md Nur Mohhamamad</td>
+                      <td>Gulshan</td>
                       <td>One Hour</td>
-                      <td>1000</td>
-                      <td>Dhaka</td>
-                     
+                      <td>Abul Kalam</td>
+                       <td> 
+                     <input type="checkbox"   data-toggle="toggle"/>
+                      </td>
+                      <td> 
+                      7/1/2023 11:45am
+                      </td>
                        <td>
                         <AiFillDelete
                           style={{ fontSize: "20px", color: "red" }}
@@ -75,40 +79,21 @@ const ManageAttendance = () => {
                         ></FaRegEdit>
                       </td>
 
-                      {/* <div class="image">
-              <img
-                src="dist/img/user2-160x160.jpg"
-                class="img-circle elevation-2"
-                alt="User Image"
-              />
-            </div> */}
+                
                     </tr>
                     <tr>
-                      <td>1</td>
-                      <td>Back Pain.</td>
-                      <td>One Hour</td>
-                      <td>1000</td>
-                      <td>Dhaka</td>
-                     
-                       <td>
-                        <AiFillDelete
-                          style={{ fontSize: "20px", color: "red" }}
-                        ></AiFillDelete>
-                      </td>
-                      <td>
-                        <FaRegEdit
-                          style={{ fontSize: "20px", color: "green" }}
-                        ></FaRegEdit>
-                      </td>
-
-                     
-                    </tr>
-                    <tr>
-                      <td>1</td>
+                      <td>3</td>
                       <td>Back Pain</td>
+                      <td>Md Nur Mohhamamad</td>
+                      <td>Gulshan</td>
                       <td>One Hour</td>
-                      <td>1000</td>
-                      <td>Dhaka</td>
+                      <td>Abul Kalam</td>
+                       <td> 
+                     <input type="checkbox"   data-toggle="toggle"/>
+                      </td>
+                      <td> 
+                      7/1/2023 11:45am
+                      </td>
                      
                        <td>
                         <AiFillDelete
@@ -121,14 +106,21 @@ const ManageAttendance = () => {
                         ></FaRegEdit>
                       </td>
 
-                      
+                
                     </tr>
                     <tr>
-                      <td>1</td>
+                      <td>4</td>
                       <td>Back Pain</td>
+                      <td>Md Nur Mohhamamad</td>
+                      <td>Gulshan</td>
                       <td>One Hour</td>
-                      <td>1000</td>
-                      <td>Dhaka</td>
+                      <td>Abul Kalam</td>
+                       <td> 
+                     <input type="checkbox"   data-toggle="toggle"/>
+                      </td>
+                      <td> 
+                      7/1/2023 11:45am
+                      </td>
                      
                        <td>
                         <AiFillDelete
@@ -141,7 +133,33 @@ const ManageAttendance = () => {
                         ></FaRegEdit>
                       </td>
 
-                     
+                
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Back Pain</td>
+                      <td>Md Nur Mohhamamad</td>
+                      <td>Gulshan</td>
+                      <td>One Hour</td>
+                      <td>Abul Kalam</td>
+                       <td> 
+                     <input type="checkbox"   data-toggle="toggle"/>
+                      </td>
+                      <td> 
+                      7/1/2023 11:45am
+                      </td>
+                       <td>
+                        <AiFillDelete
+                          style={{ fontSize: "20px", color: "red" }}
+                        ></AiFillDelete>
+                      </td>
+                      <td>
+                        <FaRegEdit
+                          style={{ fontSize: "20px", color: "green" }}
+                        ></FaRegEdit>
+                      </td>
+
+                
                     </tr>
                     
                     
