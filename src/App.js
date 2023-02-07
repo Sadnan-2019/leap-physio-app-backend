@@ -39,7 +39,7 @@ function App() {
         <Route path="/manage-attendance" element={<ManageAttendance/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
       </Routes>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

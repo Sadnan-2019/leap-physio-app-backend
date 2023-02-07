@@ -4,7 +4,7 @@ const Attendance = () => {
   return (
     <div>
       <div className="container  ">
-        <div className="row ">
+        <div className="row   mx-3  ">
           <div className="col-lg-8 mx-auto d-flex">
             <div class="form-group p-2 col-lg-3 ">
               <label> Service Name</label>
@@ -52,8 +52,8 @@ const Attendance = () => {
             </div>
           </div>
         </div>
-        <div className="row ">
-          <div className="col-lg-8   mx-auto   d-flex">
+        <div className="row mx-3   ">
+          <div className="col-lg-8 gap-3    mx-auto   d-flex">
             <div class="form-group p-2 col-lg-4  ">
               <label> Physiotherapist Name</label>
               <select class="form-control select2" style={{ width: "100%" }}>
