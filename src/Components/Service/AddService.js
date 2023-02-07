@@ -1,23 +1,124 @@
- import React from 'react';
- 
- const AddService = () => {
-    return (
-        <div>
-            <div className="container-fluid ">
-            <div class="card-header ">
-                <h3 class="text-center">Add Service Details</h3>
-              </div>
-        <div className="row d-flex justify-content-center align-items-center">
-          <div class="col-lg-6 d-flex justify-content-between align-items-center p-2   ">
-            <div class="form-group p-2 col-lg-4 ">
+import React, { useState } from "react";
+
+const AddService = () => {
+  const [formValues, setFormValues] = useState([
+    { fname: "", occupation: "", age: "", mobile: "" },
+  ]);
+  let handleChange = (i, e) => {
+    let newFormValues = [...formValues];
+    newFormValues[i][e.target.name] = e.target.value;
+    setFormValues(newFormValues);
+  };
+
+  let addFormFields = () => {
+    setFormValues([...formValues, { name: "", email: "" }]);
+  };
+
+  let removeFormFields = (i) => {
+    let newFormValues = [...formValues];
+    newFormValues.splice(i, 1);
+    setFormValues(newFormValues);
+  };
+  return (
+    <div>
+      <div className="container-fluid ">
+        <form className="">
+          {formValues.map((element, index) => (
+            <div
+              className="d-flex gap-1 justify-content-center px-1"
+              key={index}
+            >
+              <div class="form-group p-2 col-lg-4 ">
               <label>Service Name</label>
               <input
                 class="form-control select2"
                 style={{ width: "100%" }}
                 placeholder="Service Name"
+                name="service_name"
+                value={element.service_name || ""}
+                onChange={(e) => handleChange(index, e)}
               />
             </div>
-            <div class="form-group p-2 col-lg-4 ">
+              <div class="col-md-3 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Occupation"
+                  name="occupation"
+                  value={element.occupation || ""}
+                  onChange={(e) => handleChange(index, e)}
+                />
+              </div>
+              <div class="col-md-3 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Age"
+                  name="age"
+                  value={element.age || ""}
+                  onChange={(e) => handleChange(index, e)}
+                />
+              </div>
+              <div class="col-md-3 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Mobile No"
+                  name="mobile"
+                  value={element.mobile || ""}
+                  onChange={(e) => handleChange(index, e)}
+                />
+              </div>
+              {index ? (
+                <div
+                  className=""
+
+                  //     className=" btn btn-secondary  d-lg-block btn-sm"
+                  //     onClick={() => removeFormFields(index)}
+                >
+                  <span
+                    type="button"
+                    class="badge bg-secondary"
+                    onClick={() => removeFormFields(index)}
+                  >
+                    Remove
+                  </span>
+                </div>
+              ) : null}
+            </div>
+          ))}
+
+          <div className="  d-flex justify-content-end mb-3  ">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              onClick={() => addFormFields()}
+            >
+              Add Another One
+            </button>
+          </div>
+        </form>
+
+        <div class="card-header ">
+          <h3 class="text-center">Add Service Details</h3>
+        </div>
+        <div className="row   justify-content-center align-items-center">
+          <div class="col-lg-6   ">
+                <form>
+                  {formValues.map((element,index)=>(
+                    <div className="d-flex" key={index}>
+                <div class="form-group p-2   ">
+              <label>Service Name</label>
+              <input
+                class="form-control select2"
+                style={{ width: "100%" }}
+                placeholder="Service Name"
+                name="service_name"
+                value={element.service_name || ""}
+                onChange={(e) => handleChange(index, e)}
+              />
+            </div>
+            <div class="form-group p-2   ">
               <label>Service Hour</label>
               <input
                 class="form-control select2"
@@ -25,41 +126,34 @@
                 placeholder="Service Hour"
               />
             </div>
-            <div class="form-group p-2 col-lg-4 ">
-              <label>Service Location   </label>
+            <div class="form-group p-2  ">
+              <label>Service Location </label>
               <input
                 class="form-control select2"
                 style={{ width: "100%" }}
                 placeholder="Service Location "
               />
             </div>
-            <div class="form-group p-2 col-lg-4 ">
-              <label>Service Price   </label>
+            <div class="form-group p-2   ">
+              <label>Service Price </label>
               <input
                 class="form-control select2"
                 style={{ width: "100%" }}
                 placeholder="Service Price  "
               />
             </div>
-            {/* <div class="form-group p-2 col-lg-6 "  >
-              <label>Institution Name</label>
-              <input class="form-control select2" style={{ width: "100%" }} placeholder="Institution Name"/>
+                </div>
+
+                  ))}
+                  
                 
-            </div> */}
-            {/* <div class="form-group p-2 col-lg-6 "  >
-              <label>Qualification</label>
-              <input class="form-control select2" style={{ width: "100%" }} placeholder="Qualification"/>
-                
-            </div> */}
-            {/* <div class="form-group p-2 col-lg-6 "  >
-              <label>Mobile</label>
-              <input class="form-control select2" style={{ width: "100%" }} placeholder="Mobile"/>
-                
-            </div> */}
+
+                </form>
+
+            
+           
           </div>
         </div>
-        
-        
 
         <div className="  ">
           <div
@@ -70,9 +164,8 @@
           </div>
         </div>
       </div>
-      
-        </div>
-    );
- };
- 
- export default AddService;
+    </div>
+  );
+};
+
+export default AddService;
