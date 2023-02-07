@@ -22,136 +22,88 @@ const AddService = () => {
   return (
     <div>
       <div className="container-fluid ">
-        <form className="">
-          {formValues.map((element, index) => (
-            <div
-              className="d-flex gap-1 justify-content-center px-1"
-              key={index}
-            >
-              <div class="form-group p-2 col-lg-4 ">
-              <label>Service Name</label>
-              <input
-                class="form-control select2"
-                style={{ width: "100%" }}
-                placeholder="Service Name"
-                name="service_name"
-                value={element.service_name || ""}
-                onChange={(e) => handleChange(index, e)}
-              />
-            </div>
-              <div class="col-md-3 mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Occupation"
-                  name="occupation"
-                  value={element.occupation || ""}
-                  onChange={(e) => handleChange(index, e)}
-                />
-              </div>
-              <div class="col-md-3 mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Age"
-                  name="age"
-                  value={element.age || ""}
-                  onChange={(e) => handleChange(index, e)}
-                />
-              </div>
-              <div class="col-md-3 mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Mobile No"
-                  name="mobile"
-                  value={element.mobile || ""}
-                  onChange={(e) => handleChange(index, e)}
-                />
-              </div>
-              {index ? (
+       
+
+        <div class="card-header ">
+          <h3 class="text-center">Add Service Details</h3>
+        </div>
+        <div className="row   ">
+          <div class="col-lg-8 mx-auto   ">
+            <form>
+              {formValues.map((element, index) => (
+                <div className="d-flex" key={index}>
+                  <div class="form-group p-2   ">
+                    <label>Service Name</label>
+                    <input
+                      class="form-control select2"
+                      style={{ width: "100%" }}
+                      placeholder="Service Name"
+                      name="service_name"
+                      value={element.service_name || ""}
+                      onChange={(e) => handleChange(index, e)}
+                    />
+                  </div>
+                  <div class="form-group p-2   ">
+                    <label>Service Hour</label>
+                    <input
+                      class="form-control select2"
+                      style={{ width: "100%" }}
+                      name="service_hour"
+                      value={element.service_hour || ""}
+                      onChange={(e) => handleChange(index, e)}
+                      placeholder="Service Hour"
+                    />
+                  </div>
+                  <div class="form-group p-2  ">
+                    <label>Service Location </label>
+                    <input
+                      class="form-control select2"
+                      style={{ width: "100%" }}
+                      name="service_location"
+                      value={element.service_location || ""}
+                      onChange={(e) => handleChange(index, e)}
+                      placeholder="Service Location "
+                    />
+                  </div>
+                  <div class="form-group p-2   ">
+                    <label>Service Price </label>
+                    <input
+                      class="form-control select2"
+                      style={{ width: "100%" }}
+                      name="service_price"
+                      value={element.service_price || ""}
+                      onChange={(e) => handleChange(index, e)}
+                      placeholder="Service Price  "
+                    />
+                  </div>
+                  {index ? (
                 <div
-                  className=""
+                  className="p-2 mx-auto"
 
                   //     className=" btn btn-secondary  d-lg-block btn-sm"
                   //     onClick={() => removeFormFields(index)}
                 >
                   <span
                     type="button"
-                    class="badge bg-secondary"
+                    class="badge bg-danger"
                     onClick={() => removeFormFields(index)}
                   >
-                    Remove
+                    X
                   </span>
                 </div>
               ) : null}
-            </div>
-          ))}
-
-          <div className="  d-flex justify-content-end mb-3  ">
+                </div>
+              ))}
+              <div className="  d-flex justify-content-end mb-3  ">
             <button
               type="button"
               class="btn btn-secondary btn-sm"
               onClick={() => addFormFields()}
             >
-              Add Another One
+              Add Another Service
             </button>
           </div>
-        </form>
-
-        <div class="card-header ">
-          <h3 class="text-center">Add Service Details</h3>
-        </div>
-        <div className="row   justify-content-center align-items-center">
-          <div class="col-lg-6   ">
-                <form>
-                  {formValues.map((element,index)=>(
-                    <div className="d-flex" key={index}>
-                <div class="form-group p-2   ">
-              <label>Service Name</label>
-              <input
-                class="form-control select2"
-                style={{ width: "100%" }}
-                placeholder="Service Name"
-                name="service_name"
-                value={element.service_name || ""}
-                onChange={(e) => handleChange(index, e)}
-              />
-            </div>
-            <div class="form-group p-2   ">
-              <label>Service Hour</label>
-              <input
-                class="form-control select2"
-                style={{ width: "100%" }}
-                placeholder="Service Hour"
-              />
-            </div>
-            <div class="form-group p-2  ">
-              <label>Service Location </label>
-              <input
-                class="form-control select2"
-                style={{ width: "100%" }}
-                placeholder="Service Location "
-              />
-            </div>
-            <div class="form-group p-2   ">
-              <label>Service Price </label>
-              <input
-                class="form-control select2"
-                style={{ width: "100%" }}
-                placeholder="Service Price  "
-              />
-            </div>
-                </div>
-
-                  ))}
-                  
-                
-
-                </form>
-
-            
-           
+            </form>
           </div>
         </div>
 
