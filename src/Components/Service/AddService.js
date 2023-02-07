@@ -28,7 +28,7 @@ const AddService = () => {
           <h3 class="text-center">Add Service Details</h3>
         </div>
         <div className="row   ">
-          <div class="col-lg-8 mx-auto   ">
+          <div class="col-lg-8   px-5  mx-auto">
             <form>
               {formValues.map((element, index) => (
                 <div className="d-flex" key={index}>
