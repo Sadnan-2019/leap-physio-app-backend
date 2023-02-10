@@ -1,6 +1,14 @@
 import React from 'react';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const Login = () => {
+
+  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  if(user){
+
+    console.log(user)
+  }
     return (
         <div className='d-flex align-items-center col-lg-12 justify-content-center py-5'>
           <div class="login-box">
@@ -50,9 +58,12 @@ const Login = () => {
         <a href="#" class="btn btn-block btn-primary">
           <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
         </a>
-        <a href="#" class="btn btn-block btn-danger">
+        <button href="#" class="btn btn-block btn-danger"
+        onClick={() => signInWithGoogle()}
+        
+        >
           <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-        </a>
+        </button>
       </div>
      
 
