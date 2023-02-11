@@ -27,7 +27,7 @@ const Login = () => {
             <p class="login-box-msg">Sign in to start your session</p>
 
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div class=" input-group mb-3">
+              <div class=" input-group  ">
                 <input
                   type="email"
                   class="form-control"
@@ -36,7 +36,7 @@ const Login = () => {
                   {...register("email",  {
                     required:{
                       value:"true",
-                      message:"Field is requried"
+                      message:" eamil field is requried"
                     },
                     pattern: {
                       value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
@@ -72,27 +72,56 @@ const Login = () => {
                   </div>
                 
                  </div>
-              <div class="input-group mb-3">
+              <div class=" input-group  ">
                 <input
                   type="password"
                   class="form-control"
-                  placeholder="Password"
+                  placeholder=""
+                  name="password"
+                  {...register("password",  {
+                    required:{
+                      value:"true",
+                      message:" password field is requried"
+                    },
+                    pattern: {
+                      value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                      message: 'error message' 
+                    }
+                  })}
+                   
                 />
+                 
+                 
+
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-lock"></span>
                   </div>
-                </div>
+                </div> 
+                 
               </div>
-              <div class="row">
-                <div class="col-8">
-                  <div class="icheck-primary">
-                    <input type="checkbox" id="remember" />
-                    <label for="remember">Remember Me</label>
+              <div className=" text-danger">
+                  <div className="col-lg-12 ">
+                  <label className="label">
+                {errors.password?.type === "required" && (
+                  <span  >
+                    {errors.password.message}
+                  </span>
+                )}
+                {errors.password?.type === "pattern" && (
+                  <span  >
+                    {errors.password.message}
+                  </span>
+                )}
+              </label>
                   </div>
-                </div>
+                
+                 </div>
+               
+              <div class="row">
+                 
 
-                <div class="col-4">
+                <div class="col-12">
                   <input type="submit" value="Login" class="btn btn-primary btn-block"/>
                     
                   
@@ -101,9 +130,9 @@ const Login = () => {
             </form>
 
             <div class="social-auth-links text-center mt-2 mb-3">
-              <a href="#" class="btn btn-block btn-primary">
+              {/* <a href="#" class="btn btn-block btn-primary">
                 <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-              </a>
+              </a> */}
               <button
                 href="#"
                 class="btn btn-block btn-danger"
@@ -113,9 +142,9 @@ const Login = () => {
               </button>
             </div>
 
-            <p class="mb-1">
+            {/* <p class="mb-1">
               <a href="forgot-password.html">I forgot my password</a>
-            </p>
+            </p> */}
             <p class="mb-0">
               <a href="register.html" class="text-center">
                 Register a new membership
