@@ -33,98 +33,80 @@ const Login = () => {
                   class="form-control"
                   placeholder="Email"
                   name="email"
-                  {...register("email",  {
-                    required:{
-                      value:"true",
-                      message:" eamil field is requried"
+                  {...register("email", {
+                    required: {
+                      value: "true",
+                      message: " eamil field is requried",
                     },
                     pattern: {
                       value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                      message: 'error message' 
-                    }
+                      message: "error message",
+                    },
                   })}
-                   
                 />
-                
-                 
 
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-envelope"></span>
                   </div>
-                </div> 
-                 
+                </div>
               </div>
               <div className=" text-danger">
-                  <div className="col-lg-12 ">
+                <div className="col-lg-12 ">
                   <label className="label">
-                {errors.email?.type === "required" && (
-                  <span  >
-                    {errors.email.message}
-                  </span>
-                )}
-                {errors.email?.type === "pattern" && (
-                  <span  >
-                    {errors.email.message}
-                  </span>
-                )}
-              </label>
-                  </div>
-                
-                 </div>
+                    {errors.email?.type === "required" && (
+                      <span>{errors.email.message}</span>
+                    )}
+                    {errors.email?.type === "pattern" && (
+                      <span>{errors.email.message}</span>
+                    )}
+                  </label>
+                </div>
+              </div>
               <div class=" input-group  ">
                 <input
                   type="password"
                   class="form-control"
                   placeholder=""
                   name="password"
-                  {...register("password",  {
-                    required:{
-                      value:"true",
-                      message:" password field is requried"
+                  {...register("password", {
+                    required: {
+                      value: "true",
+                      message: " password field is requried",
                     },
                     pattern: {
                       value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                      message: 'error message' 
-                    }
+                      message: "error message",
+                    },
                   })}
-                   
                 />
-                 
-                 
 
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <span class="fas fa-lock"></span>
                   </div>
-                </div> 
-                 
+                </div>
               </div>
               <div className=" text-danger">
-                  <div className="col-lg-12 ">
+                <div className="col-lg-12 ">
                   <label className="label">
-                {errors.password?.type === "required" && (
-                  <span  >
-                    {errors.password.message}
-                  </span>
-                )}
-                {errors.password?.type === "pattern" && (
-                  <span  >
-                    {errors.password.message}
-                  </span>
-                )}
-              </label>
-                  </div>
-                
-                 </div>
-               
-              <div class="row">
-                 
+                    {errors.password?.type === "required" && (
+                      <span>{errors.password.message}</span>
+                    )}
+                    {errors.password?.type === "pattern" && (
+                      <span>{errors.password.message}</span>
+                    )}
+                  </label>
+                </div>
+              </div>
 
+              <div class="row">
                 <div class="col-12">
-                  <input type="submit" value="Login" class="btn btn-primary btn-block"/>
-                    
-                  
+                  <input
+                    type="submit"
+                    value="Login"
+                    class="btn btn-primary btn-block"
+                  />
                 </div>
               </div>
             </form>
