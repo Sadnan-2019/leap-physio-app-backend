@@ -11,6 +11,7 @@ const Login = () => {
     handleSubmit,
   } = useForm();
   const onSubmit = (data) => console.log(data);
+
   if (user) {
     console.log(user);
   }
@@ -40,7 +41,7 @@ const Login = () => {
                     },
                     pattern: {
                       value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                      message: "error message",
+                      message: "Provide a valid email address",
                     },
                   })}
                 />
@@ -67,16 +68,16 @@ const Login = () => {
                 <input
                   type="password"
                   class="form-control"
-                  placeholder=""
+                  placeholder="Paasword"
                   name="password"
                   {...register("password", {
                     required: {
                       value: "true",
                       message: " password field is requried",
                     },
-                    pattern: {
-                      value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                      message: "error message",
+                    minLength: {
+                      value: 4,
+                      message: "Password should be atleast 4 ", // JS only: <p>error message</p> TS only support string
                     },
                   })}
                 />
@@ -93,7 +94,7 @@ const Login = () => {
                     {errors.password?.type === "required" && (
                       <span>{errors.password.message}</span>
                     )}
-                    {errors.password?.type === "pattern" && (
+                    {errors.password?.type === "minLength" && (
                       <span>{errors.password.message}</span>
                     )}
                   </label>
