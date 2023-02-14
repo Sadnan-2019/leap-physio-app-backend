@@ -125,7 +125,7 @@ const AddPhysiotherapy = () => {
             </div> */}
           </div>
       </div>
-            <div className="container">
+            <div className="container-fluid ">
               <div className="row d-flex justify-content-center align-items-center">
       <div class="col-lg-6 d-flex justify-content-between align-items-center p-2   ">
             <div class="form-group p-2 col-lg-6 "  >
@@ -138,26 +138,32 @@ const AddPhysiotherapy = () => {
               <input class="form-control select2" style={{ width: "100%" }} placeholder="Address"/>
                 
             </div>
-            <div class="form-group p-2 col-lg-6 "  >
+            
+          </div>
+         
+          
+      </div>
+      <div className="row  justify-content-center align-items-center">
+        <div className="col-lg-6 d-flex ">
+        <div class="form-group p-2 col-lg-6 "  >
               <label> Gender</label>
               <input class="form-control select2" style={{ width: "100%" }} placeholder="Gender"/>
                 
             </div>
             
              
-            {/* <div class="form-group p-2 col-lg-6 "  >
-              <label>Mobile</label>
-              <input class="form-control select2" style={{ width: "100%" }} placeholder="Mobile"/>
+            
+            <div class="form-group p-2 col-lg-6 "  >
+              <label>  Upload your CV</label>
+              <input type="file" class="form-control select2" style={{ width: "100%" }} placeholder="Mobile"/>
                 
-            </div> */}
-          </div>
-         
-
+            </div>
+        </div>
       </div>
-   
+     
             </div>
 
-           <div className="container ">
+           <div className="container-fluid ">
            <div className="row justify-content-end px-5
 ">
     <button className="btn btn-primary mb-3">Save</button>

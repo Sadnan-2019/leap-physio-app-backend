@@ -137,7 +137,7 @@ const AddPatients = () => {
               </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row d-flex justify-content-center align-items-center">
             <div class="col-lg-6 d-flex justify-content-between align-items-center    ">
               <div class="form-group p-2 col-lg-3 ">
@@ -179,7 +179,7 @@ const AddPatients = () => {
           </div>
         </div>
 
-        <div className="container ">
+        <div className="container-fluid ">
           <div
             className="row justify-content-end px-5
 "
