@@ -17,6 +17,7 @@ import AddDoctor from "./Components/Doctor/AddDoctor";
 import ManageDoctor from "./Components/Doctor/ManageDoctor";
 import Attendance from "./Components/Attendance/Attendance";
 import ManageAttendance from "./Components/Attendance/ManageAttendance";
+import Billing from "./Components/Billing/Billing";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/manage-doctor" element={<ManageDoctor/>}></Route>
         <Route path="/add-attendance" element={<Attendance/>}></Route>
         <Route path="/manage-attendance" element={<ManageAttendance/>}></Route>
+        <Route path="/billing" element={<Billing/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
       </Routes>
       {/* <Footer></Footer> */}

@@ -66,14 +66,14 @@ const AddService = () => {
                     />
                   </div>
                   <div class="form-group p-2   ">
-                    <label>Service Price </label>
+                    <label>Service Charge </label>
                     <input
                       class="form-control select2"
                       style={{ width: "100%" }}
-                      name="service_price"
+                      name="service_charge"
                       value={element.service_price || ""}
                       onChange={(e) => handleChange(index, e)}
-                      placeholder="Service Price  "
+                      placeholder="Service Charge  "
                     />
                   </div>
                   {index ? (
