@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillDelete } from "react-icons/ai";
 import { FaRegEdit } from "react-icons/fa";
 import { AiOutlineDownload } from "react-icons/ai";
+import "./Billing.css"
 const Billing = () => {
   return (
     <div>
@@ -13,7 +14,7 @@ const Billing = () => {
               <select class="form-control select2" style={{ width: "100%" }}>
                 <option selected="selected">Anika</option>
                 <option>Abdul</option>
-                {/* <option disabled="disabled">California (disabled)</option> */}
+
                 <option>Joshim</option>
                 <option>Khadja</option>
                 <option>Purnota </option>
@@ -25,102 +26,102 @@ const Billing = () => {
       </div>
 
       <div class="container">
-        <div class="row justify-content-center align-items-center px-2">
-          <div class="col-8  ">
-            <div class=" ">
-              <div class="card-header">
-                <h3 class="text-center">All Billing Details</h3>
-              </div>
-              {/* <!-- /.card-header --> */}
-              <div class="card-body px-5 ">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                    <tr>
-                      <th>Sl Number</th>
-                      <th>Service Name</th>
-                      <th>Service Hour</th>
-                      <th>Service Price</th>
+      <div className="row justify-content-center align-items-center bg-primary ">
+      <div class="col-lg-6 justify-content-between align-items-center p-2">
+    		<div class="invoice-title">
+    			<h2>Invoice</h2><h3 class="pull-right">Order # LEAP12345</h3>
+    		</div>
+    	 
+    		<div class="row">
+    			<div class="col-xs-6">
+    				<address>
+    				<strong>Billed To:</strong><br></br>
+    					John Smith<br></br>
+    					1234 Main<br></br>
+    					Apt. 4B<br></br>
+    					Springfield, ST 54321
+    				</address>
+    			</div>
+    			 
+    		</div>
+    		<div class="row ">
+    			 
+    			 
+    		</div>
+    	</div>
 
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Back Pain</td>
-                      <td>One Hour</td>
-                      <td>1000</td>
-
-                      <td>
-                        <AiFillDelete
-                          style={{ fontSize: "20px", color: "red" }}
-                        ></AiFillDelete>
-                      </td>
-                        
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Leg Pain</td>
-                      <td>One Hour</td>
-                      <td>1000</td>
-
-                      <td>
-                        <AiFillDelete
-                          style={{ fontSize: "20px", color: "red" }}
-                        ></AiFillDelete>
-                      </td>
-                      
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Knee Pain</td>
-                      <td>One Hour</td>
-                      <td>1000</td>
-
-                      <td>
-                        <AiFillDelete
-                          style={{ fontSize: "20px", color: "red" }}
-                        ></AiFillDelete>
-                      </td>
-                     
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td> Neck Pain</td>
-                      <td>One Hour</td>
-                      <td>1000</td>
-
-                      <td>
-                        <AiFillDelete
-                          style={{ fontSize: "20px", color: "red" }}
-                        ></AiFillDelete>
-                      </td>
-                       
-                    </tr>
-
-                    
-                  </tbody>
-                </table>
-                <div className="bg-warning d-flex justify-content-around">
-                  <h3 className="">Total</h3>
-                  <h3 className="">4000</h3>
-                  {/* <td>
-                        <AiFillDelete
-                          style={{ fontSize: "20px", color: "red" }}
-                        ></AiFillDelete>
-                      </td> */}
-                </div>
-              </div>
-              {/* <!-- /.card-body --> */}
-            </div>
-            {/* <!-- /.card --> */}
-
-            {/* <!-- /.card --> */}
-          </div>
-          {/* <!-- /.col --> */}
-        </div>
-        {/* <!-- /.row --> */}
+        
       </div>
+      </div>
+
+<div class="container bg-warning">
+    
+    
+    <div class="row  justify-content-center align-items-center">
+    	<div class="col-md-6">
+    		<div class="panel panel-default">
+    			<div class="panel-heading">
+    				<h3 class="panel-title"><strong>Service  Summary</strong></h3>
+    			</div>
+    			<div class="panel-body">
+    				<div class="table-responsive">
+    					<table class="table table-condensed">
+    						<thead>
+                                <tr>
+        							<td><strong>Service Name</strong></td>
+        							<td class="text-center"><strong>Service Price</strong></td>
+        							{/* <td class="text-center"><strong>Quantity</strong></td> */}
+        							<td class="text-right"><strong>Totals</strong></td>
+                                </tr>
+    						</thead>
+    						<tbody>
+    							{/* <!-- foreach ($order->lineItems as $line) or some such thing here --> */}
+    							<tr>
+    								<td>Leg Pain</td>
+    								<td class="text-center">$10.99</td>
+    								{/* <td class="text-center">1</td> */}
+    								<td class="text-right">$10.99</td>
+    							</tr>
+                                <tr>
+        							<td>Knee Pain</td>
+    								<td class="text-center">$20.00</td>
+    								{/* <td class="text-center">3</td> */}
+    								<td class="text-right">$60.00</td>
+    							</tr>
+                                <tr>
+            						<td>Back Pain</td>
+    								<td class="text-center">$600.00</td>
+    								{/* <td class="text-center">1</td> */}
+    								<td class="text-right">$600.00</td>
+    							</tr>
+    							<tr>
+    								<td class="thick-line"></td>
+    								<td class="thick-line"></td>
+    								<td class="thick-line"></td>
+    								<td class="thick-line"></td>
+    								{/* <td class="thick-line text-center"><strong>Subtotal</strong></td> */}
+    								{/* <td class="thick-line text-right">$670.99</td> */}
+    							</tr>
+    							{/* <tr>
+    								<td class="no-line"></td>
+    								<td class="no-line"></td>
+    								<td class="no-line text-center"><strong>Shipping</strong></td>
+    								<td class="no-line text-right">$15</td>
+    							</tr> */}
+    							<tr>
+    								<td class="no-line"></td>
+    								{/* <td class="no-line"></td> */}
+    								<td class="no-line text-center"><strong>Total</strong></td>
+    								<td class="no-line text-right">$685.99</td>
+    							</tr>
+    						</tbody>
+    					</table>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</div>
     </div>
   );
 };
