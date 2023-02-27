@@ -18,6 +18,7 @@ import ManageDoctor from "./Components/Doctor/ManageDoctor";
 import Attendance from "./Components/Attendance/Attendance";
 import ManageAttendance from "./Components/Attendance/ManageAttendance";
 import Billing from "./Components/Billing/Billing";
+import Register from "./Components/Register/Register";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/manage-attendance" element={<ManageAttendance/>}></Route>
         <Route path="/billing" element={<Billing/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
       </Routes>
       {/* <Footer></Footer> */}
     </div>
