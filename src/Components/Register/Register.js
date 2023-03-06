@@ -1,18 +1,18 @@
 import React, { useRef, useState } from "react";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useForm, useWatch } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 // import React from 'react';
 const Register = () => {
   // const navigate = useNavigate()
-  // const [eamil ,setEmail] = useState("")
-  // const [name ,setName] = useState("")
-  // const [password ,setPassword] = useState("")
-  // const [email, setEmail] = useState("");
-  // const [name, setName] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [confirmpassword, setConfirmpassword] = useState("");
-  // const [error, setError] = useState("");
-  // const navigate = useNavigate()
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth);
+    // navigate = ("/")
 
   const {
     register,
@@ -21,7 +21,7 @@ const Register = () => {
   } = useForm();
   // const password = useRef({});
   // password.current = watch("password", "");
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => createUserWithEmailAndPassword(data.email,data.name,data.password);
   return (
     <div>
       <div className="d-flex align-items-center col-lg-12 justify-content-center py-5">

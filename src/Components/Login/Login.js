@@ -1,19 +1,44 @@
 import React from "react";
-import { useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useSignInWithGoogle,useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 
 const Login = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const [
+    signInWithEmailAndPassword,
+    userGoogle,
+    loadingGoogle,
+    errorGoogle,
+  ] = useSignInWithEmailAndPassword(auth);
+
+
+
   const navigate = useNavigate()
+
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
 
+
+  const onSubmit = (data) =>{
+
+    signInWithEmailAndPassword(data.email,data.password)
+    console.log(data);
+
+  }
+
+  if(loading || loadingGoogle){
+
+    return <div className="  ">
+      <p className="  text-center">Loading......</p>
+      </div>
+  }
+  
+  
   if (user) {
     // console.log(user);
     navigate("/")
