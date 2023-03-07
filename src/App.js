@@ -27,7 +27,8 @@ function App() {
       <Aside></Aside>
 
       <Routes>
-        <Route path="/" element={<Dashboard />}></Route>
+        {/* <Route path="/" element={<Dashboard />}></Route> */}
+        <Route path="/" element={<Login />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/add-physio" element={<AddPhysiotherapy />}></Route>
         <Route path="/manage-physio" element={<ManagePhysio />}></Route>
