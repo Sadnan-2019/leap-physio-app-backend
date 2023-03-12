@@ -106,6 +106,30 @@ const Aside = () => {
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
+                   
+                  <img src={patients} alt="" />
+                  <p>
+                  Appointment
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <Link to="/add-appointment" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Add Appointment </p>
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/manage-appointment" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Manage Appointment </p>
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-edit"></i>
                   <p>
                     Service

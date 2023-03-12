@@ -19,6 +19,8 @@ import Attendance from "./Components/Attendance/Attendance";
 import ManageAttendance from "./Components/Attendance/ManageAttendance";
 import Billing from "./Components/Billing/Billing";
 import Register from "./Components/Register/Register";
+import AddAppointment from "./Components/Appointment/AddAppointment";
+import ManageAppointment from "./Components/Appointment/ManageAppointment";
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path="/manage-service" element={<ManageService/>}></Route>
         <Route path="/add-doctor" element={<AddDoctor/>}></Route>
         <Route path="/manage-doctor" element={<ManageDoctor/>}></Route>
+        <Route path="/add-appointment" element={<AddAppointment/>}></Route>
+        <Route path="/manage-appointment" element={<ManageAppointment/>}></Route>
         <Route path="/add-attendance" element={<Attendance/>}></Route>
         <Route path="/manage-attendance" element={<ManageAttendance/>}></Route>
         <Route path="/billing" element={<Billing/>}></Route>
