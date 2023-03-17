@@ -6,7 +6,8 @@ import auth from "../../firebase.init";
 import Loading from "../Loading/Loading";
 // import React from 'react';
 const Register = () => {
-  // const navigate = useNavigate()
+  const navigate = useNavigate();
+  
   const [
     createUserWithEmailAndPassword,
     user,
@@ -14,9 +15,11 @@ const Register = () => {
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
   const [updateProfile, updating, profileError] = useUpdateProfile(auth);
+
+  
   let signInError;
-    // navigate = ("/")
-    if(error || profileError  ){
+  
+    if(error || profileError  || updating){
 
       signInError = <p className="  text-danger">{  error?.message}</p>
     }
@@ -33,10 +36,12 @@ const Register = () => {
     await updateProfile({ displayName:data.name  })
     console.log(data);
     console.log(" update done");
+    // navigate ("/dashboard")
   };
  if(user){
 
   console.log(user)
+  navigate("/")
  }
   if( loading  ){
 

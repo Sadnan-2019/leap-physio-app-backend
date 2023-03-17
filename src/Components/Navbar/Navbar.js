@@ -1,7 +1,17 @@
+import { signOut } from "firebase/auth";
 import React from "react";
-import { Link } from "react-router-dom";
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 
 const Navbar = () => {
+const navigate = useNavigate();
+  const [user, loading, error] = useAuthState(auth);
+  // const [signOut, signLoading, signError] = useSignOut(auth);
+  const logout = () => {
+    signOut(auth);
+    navigate("login")
+  };
   return (
     <div>
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -176,10 +186,10 @@ const Navbar = () => {
                 {/* <span class="float-right text-muted text-sm">12 hours</span> */}
               </a>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">
+              <Link  class="dropdown-item"   onClick={logout}>
                 <i class="fas fa-file mr-2"></i> Logout
                 {/* <span class="float-right text-muted text-sm">2 days</span> */}
-              </a>
+              </Link>
               
             </div>
           </li>
