@@ -3,14 +3,15 @@ import { useSignInWithGoogle,useSignInWithEmailAndPassword } from "react-firebas
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import Loading from "../Loading/Loading";
 
 const Login = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const [
     signInWithEmailAndPassword,
-    userGoogle,
-    loadingGoogle,
-    errorGoogle,
+    userEmail,
+    loadingEmail,
+    errorEmail,
   ] = useSignInWithEmailAndPassword(auth);
 
 
@@ -23,7 +24,7 @@ const Login = () => {
     handleSubmit,
   } = useForm();
 
-
+let signInError;
   const onSubmit = (data) =>{
 
     signInWithEmailAndPassword(data.email,data.password)
@@ -31,13 +32,14 @@ const Login = () => {
 
   }
 
-  if(loading || loadingGoogle){
+  if( loading || loadingEmail){
 
-    return <div className="  ">
-      <p className="  text-center">Loading......</p>
-      </div>
+    return  <Loading></Loading>
   }
-  
+  if(error || errorEmail){
+
+    signInError = <p className="  text-danger">{errorEmail?.message || error?.message}</p>
+  }
   
   if (user) {
     // console.log(user);
@@ -128,7 +130,7 @@ const Login = () => {
                   </label>
                 </div>
               </div>
-
+                      {signInError}
               <div class="row">
                 <div class="col-12">
                   <input

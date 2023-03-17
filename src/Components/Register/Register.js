@@ -3,6 +3,7 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useForm, useWatch } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import Loading from "../Loading/Loading";
 // import React from 'react';
 const Register = () => {
   // const navigate = useNavigate()
@@ -12,8 +13,12 @@ const Register = () => {
     loading,
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
+  let signInError;
     // navigate = ("/")
+    if(error   ){
 
+      signInError = <p className="  text-danger">{  error?.message}</p>
+    }
   const {
     register,
     formState: { errors },
@@ -21,7 +26,17 @@ const Register = () => {
   } = useForm();
   // const password = useRef({});
   // password.current = watch("password", "");
-  const onSubmit = (data) => createUserWithEmailAndPassword(data.email,data.name,data.password);
+  
+  const onSubmit = (data) => {
+    createUserWithEmailAndPassword(data.email,data.name,data.password);
+    console.log(data);
+  };
+ 
+  if( loading  ){
+
+    return  <Loading></Loading>
+  }
+  
   return (
     <div>
       <div className="d-flex align-items-center col-lg-12 justify-content-center py-5">
@@ -211,7 +226,7 @@ const Register = () => {
                   </label>
                 </div>
               </div> */}
-
+  {signInError}
                 <div class="row">
                   <div class="col-12">
                     <input
