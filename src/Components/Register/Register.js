@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import { useForm, useWatch } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
@@ -13,9 +13,10 @@ const Register = () => {
     loading,
     error,
   ] = useCreateUserWithEmailAndPassword(auth);
+  const [updateProfile, updating, profileError] = useUpdateProfile(auth);
   let signInError;
     // navigate = ("/")
-    if(error   ){
+    if(error || profileError  ){
 
       signInError = <p className="  text-danger">{  error?.message}</p>
     }
@@ -27,11 +28,16 @@ const Register = () => {
   // const password = useRef({});
   // password.current = watch("password", "");
   
-  const onSubmit = (data) => {
-    createUserWithEmailAndPassword(data.email,data.name,data.password);
+  const onSubmit = async (data) => {
+     await createUserWithEmailAndPassword(data.email,data.name,data.password);
+    await updateProfile({ displayName:data.name  })
     console.log(data);
+    console.log(" update done");
   };
- 
+ if(user){
+
+  console.log(user)
+ }
   if( loading  ){
 
     return  <Loading></Loading>
