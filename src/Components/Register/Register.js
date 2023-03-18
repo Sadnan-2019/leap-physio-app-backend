@@ -36,12 +36,12 @@ const Register = () => {
     await updateProfile({ displayName:data.name  })
     console.log(data);
     console.log(" update done");
-    // navigate ("/dashboard")
+    navigate ("/dashboard")
   };
  if(user){
 
   console.log(user)
-  navigate("/")
+  navigate("/dashboard")
  }
   if( loading  ){
 
