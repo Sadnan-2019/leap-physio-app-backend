@@ -107,15 +107,21 @@ const AddPatients = () => {
         </div>
         <div className="row d-flex justify-content-center align-items-center">
           <div class="col-lg-6 d-flex justify-content-between align-items-center p-2   ">
-            <div class="form-group p-2 col-lg-6 ">
+            <div class="form-group p-2 col-lg-4 ">
               <label>Age</label>
               <input
                 class="form-control select2"
                 placeholder="Patients  Age "
               />
             </div>
-
-            <div class="form-group p-2 col-lg-6  ">
+            <div class="form-group p-2 col-lg-4  ">
+             <label> Patients Blood Pressure</label>
+              <input
+                class="form-control select2"
+                placeholder="Patients Blood Pressure"
+              />
+              </div>
+            <div class="form-group p-2 col-lg-5  ">
               <label> Patients Attendent Moile No</label>
               <input
                 class="form-control select2"
@@ -126,7 +132,7 @@ const AddPatients = () => {
               <label>Add Patients Diagnosis</label>
               <button className=" form-control btn btn-primary">Add Patients Diagnosis</button>
             </div> */}
-             <div class="form-group p-2 col-lg-6  ">
+             <div class="form-group p-2 col-lg-4  ">
                 <label>Add Patients Diagnosis</label>
                 {/* <button className=" form-control btn btn-primary">Add Patients Prescribe</button> */}
                 <span class="btn btn-success col fileinput-button">
@@ -135,6 +141,7 @@ const AddPatients = () => {
                   <input type="file" placeholder="Add Patients Prescribe" multiple="multiple"/>
                 </span>
               </div>
+             
           </div>
         </div>
         <div className="container-fluid">
